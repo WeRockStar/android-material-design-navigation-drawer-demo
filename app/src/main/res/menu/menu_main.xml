@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="pattern.we.com.materialdemo1.MainActivity">
     <item
+        android:id="@+id/navigate"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="@string/next" />
+
+    <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/navigate"
-        android:icon="@android:drawable/ic_media_next"
-        android:orderInCategory="200"
-        android:showAsAction="always"
-        android:title="@string/next" />
+
 </menu>
