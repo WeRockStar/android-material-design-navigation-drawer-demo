@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         toolbar = (Toolbar) findViewById(R.id.app_bar);
-
         setSupportActionBar(toolbar);
-
+        //TODO Show on display
+        getSupportActionBar().setHomeButtonEnabled(true);
         NavigationDrawerFragment drawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
         drawerFragment.setUp((DrawerLayout) findViewById(R.id.drawer_layout), toolbar);

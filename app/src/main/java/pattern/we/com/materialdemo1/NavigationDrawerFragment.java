@@ -1,6 +1,8 @@
 package pattern.we.com.materialdemo1;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -22,9 +24,13 @@ import android.view.ViewGroup;
  */
 public class NavigationDrawerFragment extends Fragment {
 
-
+    public static final String PRED_FILE_NAME = "testPrefer";
     private ActionBarDrawerToggle drawerToggle;
     private DrawerLayout drawerLayout;
+
+
+    private boolean userLearnedDrawer;
+    private boolean fromSavedInstanceState;
 
     public NavigationDrawerFragment() {
         // Required empty public constructor
@@ -54,5 +60,13 @@ public class NavigationDrawerFragment extends Fragment {
         };
 
         this.drawerLayout.setDrawerListener(drawerToggle);
+    }
+
+
+    public void saveToPreferences(Context context, String preferenceName, String preferenceValue) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(PRED_FILE_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(preferenceName, preferenceValue);
+        editor.commit();
     }
 }
