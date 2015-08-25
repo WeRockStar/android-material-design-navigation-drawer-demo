@@ -11,4 +11,9 @@
         <item name="colorAccent">@color/accentColor</item>
     </style>
 
+    <style name="MyCustomToolbar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#F00</item>
+        <item name="android:textColorSecondary">#00F</item>
+    </style>
+
 </resources>
