@@ -2,13 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EEE"
+    android:background="#ff7633"
     tools:context="pattern.we.com.materialdemo1.NavigationDrawerFragment">
 
 
     <ImageView
         android:layout_width="280dp"
         android:layout_height="140dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="@dimen/margin_top"
         android:src="@mipmap/ic_launcher" />
 
 </RelativeLayout>
