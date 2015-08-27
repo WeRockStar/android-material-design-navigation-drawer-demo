@@ -5,10 +5,10 @@
     android:background="#EEE"
     tools:context="pattern.we.com.materialdemo1.NavigationDrawerFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:src="@mipmap/ic_launcher" />
 
 </RelativeLayout>
